@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="breon.telematics.loneworkersafetyapp.android.ui.main.dashboard.DashboardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_sign_on_management"
+        android:name="breon.telematics.loneworkersafetyapp.android.ui.main.sign_on_management.SignOnManagementFragment"
+        android:label="@string/menu_sign_on_management"
+        tools:layout="@layout/fragment_sign_on_management" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="breon.telematics.loneworkersafetyapp.android.ui.main.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="breon.telematics.loneworkersafetyapp.android.ui.main.about.AboutFragment"
+        android:label="@string/about_nv"
+        tools:layout="@layout/fragment_about" />
+</navigation>

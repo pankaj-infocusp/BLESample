@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.about.AboutFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="100dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAppLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_100"
+                android:src="@drawable/ic_breon_logo_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+            <TextView
+                android:id="@+id/tvRights"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="@string/copyright_169_breon_telematics_2021_all_rights_reserved"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivAppLogo" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="@string/lone_worker_safety"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRights" />
+
+            <TextView
+                android:id="@+id/tvVersion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="@string/version_1_44"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="@string/e_mail_support_breontelematics_com_au"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvVersion" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="@string/phone_61_3_8336_3333"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPolicy"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_56"
+                android:layout_marginHorizontal="@dimen/dimen_20"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="@string/view_privacy_policy"
+                android:theme="@style/ButtonStyle"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPhone" />
+
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/circularLoader"
+                style="@style/Widget.MaterialComponents.CircularProgressIndicator.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="invisible"
+                app:indicatorColor="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="@+id/btnPolicy"
+                app:layout_constraintEnd_toEndOf="@+id/btnPolicy"
+                app:layout_constraintStart_toStartOf="@+id/btnPolicy"
+                app:layout_constraintTop_toTopOf="@+id/btnPolicy"
+                app:trackThickness="@dimen/dimen_3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnWebsite"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_56"
+                android:layout_marginHorizontal="@dimen/dimen_20"
+                android:text="@string/visit_website"
+                android:theme="@style/ButtonStyle"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnPolicy" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/circularLoader1"
+                style="@style/Widget.MaterialComponents.CircularProgressIndicator.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="invisible"
+                app:indicatorColor="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="@+id/btnWebsite"
+                app:layout_constraintEnd_toEndOf="@+id/btnWebsite"
+                app:layout_constraintStart_toStartOf="@+id/btnWebsite"
+                app:layout_constraintTop_toTopOf="@+id/btnWebsite"
+                app:trackThickness="@dimen/dimen_3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnToken"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_56"
+                android:layout_marginHorizontal="@dimen/dimen_20"
+                android:text="@string/refresh_token"
+                android:theme="@style/ButtonStyle"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnWebsite" />
+
+            <TextView
+                android:id="@+id/tvToken"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:visibility="gone"
+                android:text="@string/token_vreym4dbjxpugtzty1iohl0kthrbeicqosdhxcf29qru1ek01euw8qg3o3ucommmcdsxcoobvalkelxogpctsjwjlpks1y0vwqk6ikpjqxr9ytthb96qji4icezzqx8zkvtafu5hqb7djjc5lisyeoyuar"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnToken" />
+
+            <TextView
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:id="@+id/tvResponse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_24"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="Last Notification: {'title':'','body':'','state':'ignored','data':{}}"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvToken" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

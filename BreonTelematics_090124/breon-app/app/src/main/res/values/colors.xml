@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorSecondary_night">#FFBB86FC</color>
+    <color name="colorPrimary">#013B8D</color>
+    <color name="colorPrimaryVariant">#000661</color>
+    <color name="colorSecondary">#FF03DAC5</color>
+    <color name="colorSecondaryVariant">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#CD0A0A</color>
+    <color name="orange">#FE7E01</color>
+    <color name="setting_button_outline_color">#797070</color>
+</resources>

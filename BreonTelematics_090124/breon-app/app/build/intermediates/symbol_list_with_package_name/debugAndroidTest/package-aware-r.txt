@@ -1,0 +1,3 @@
+breon.telematics.loneworkersafetyapp.android.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

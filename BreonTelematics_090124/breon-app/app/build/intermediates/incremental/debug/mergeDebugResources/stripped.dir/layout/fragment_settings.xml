@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_5"
+        tools:context=".ui.main.settings.SettingsFragment" android:tag="layout/fragment_settings_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/settingsContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etContactName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/contact_name"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etGetContactName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etContactPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:hint="@string/contact_phone"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etContactName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etGetContactPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="@color/colorPrimary" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etSelectSafetyTemplate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:hint="@string/select_safety_template"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etContactPhone">
+
+                    <Spinner
+                        android:id="@+id/etGetSelectSafetyTemplate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text="@string/mobile_test_template_20_minutes_checkin_1_hour"
+                        android:textColor="@color/colorPrimary" />
+
+                   <!-- <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etGetSelectSafetyTemplate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text="@string/mobile_test_template_20_minutes_checkin_1_hour"
+                        android:textColor="@color/colorPrimary" />-->
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tvLocationTracking"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:text="@string/location_tracking_interval"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etSelectSafetyTemplate" />
+
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:progress="5"
+                    android:max="60"
+                    android:thumbTint="@color/colorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvLocationTracking" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMinus"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    app:icon="@drawable/ic_minus_icon"
+                    app:iconGravity="textStart"
+                    android:visibility="gone"
+                    app:iconTint="@color/setting_button_outline_color"
+                    app:layout_constraintEnd_toStartOf="@id/btnPlus"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/seekbar"
+                    app:strokeColor="@color/setting_button_outline_color"
+                    app:strokeWidth="1dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPlus"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    app:icon="@drawable/ic_add_icon"
+                    app:iconGravity="textStart"
+                    android:visibility="gone"
+                    app:iconTint="@color/setting_button_outline_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/btnMinus"
+                    app:layout_constraintTop_toBottomOf="@id/seekbar"
+                    app:strokeColor="@color/setting_button_outline_color"
+                    app:strokeWidth="1dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etSafetyTimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:hint="@string/safety_timer"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnMinus">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etGetSafetyTimer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:focusable="false"
+                        android:textColor="@color/colorPrimary" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etSignOffTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:hint="@string/sign_off_time"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etSafetyTimer">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etGetSignOffTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:focusable="false"
+                        android:textColor="@color/colorPrimary" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:id="@+id/btnSave"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_56"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:text="@string/btn_save"
+                    android:theme="@style/ButtonStyle"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toStartOf="@id/btnLogOff"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etSignOffTime" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnLogOff"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_56"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    android:text="@string/btn_log_off"
+                    android:theme="@style/ButtonStyle"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/btnSave"
+                    app:layout_constraintTop_toBottomOf="@id/etSignOffTime" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/circularLoader"
+                    style="@style/Widget.MaterialComponents.CircularProgressIndicator.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:visibility="invisible"
+                    app:indicatorColor="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnLogOff"
+                    app:layout_constraintEnd_toEndOf="@+id/btnLogOff"
+                    app:layout_constraintStart_toStartOf="@id/btnSave"
+                    app:layout_constraintTop_toTopOf="@+id/btnLogOff"
+                    app:trackThickness="@dimen/dimen_3" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnLogOff">
+
+                    <!-- Template Name -->
+                    <TextView
+                        android:id="@+id/tv_template_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/template_name"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@id/tv_template_name_value"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_template_name_value"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/tv_template_name_value" />
+
+                    <TextView
+                        android:id="@+id/tv_template_name_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/template_name_value"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tv_template_name"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- Group Name -->
+                    <TextView
+                        android:id="@+id/tv_group_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/group_name"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@id/tv_group_name_value"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_group_name_value"
+                        app:layout_constraintTop_toTopOf="@id/tv_group_name_value"/>
+
+                    <TextView
+                        android:id="@+id/tv_group_name_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/group_name_value"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tv_group_name"
+                        app:layout_constraintTop_toBottomOf="@id/tv_template_name_value" />
+
+                    <!-- Organization Name -->
+                    <TextView
+                        android:id="@+id/tv_org_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/org_name"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@id/tv_org_name_value"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_org_name_value"
+                        app:layout_constraintTop_toTopOf="@id/tv_org_name_value"/>
+
+                    <TextView
+                        android:id="@+id/tv_org_name_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/org_name_value"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tv_org_name"
+                        app:layout_constraintTop_toBottomOf="@id/tv_group_name_value" />
+
+                    <!-- 2nd point of contact -->
+                    <TextView
+                        android:id="@+id/tv_l2_name_contact"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/l2_name_contact"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@id/tv_l2_name_contact_value"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_l2_name_contact_value"
+                        app:layout_constraintTop_toTopOf="@id/tv_l2_name_contact_value"/>
+
+                    <TextView
+                        android:id="@+id/tv_l2_name_contact_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/name_contact_value"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tv_l2_name_contact"
+                        app:layout_constraintTop_toBottomOf="@id/tv_org_name_value" />
+
+                    <!-- 3rd point of contact -->
+                    <TextView
+                        android:id="@+id/tv_l3_name_contact"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/l3_name_contact"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@id/tv_l3_name_contact_value"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_l3_name_contact_value"
+                        app:layout_constraintTop_toTopOf="@id/tv_l3_name_contact_value"/>
+
+                    <TextView
+                        android:id="@+id/tv_l3_name_contact_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/name_contact_value"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tv_l3_name_contact"
+                        app:layout_constraintTop_toBottomOf="@id/tv_l2_name_contact_value" />
+
+                    <!-- 4th point of contact -->
+                    <TextView
+                        android:id="@+id/tv_l4_name_contact"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/l4_name_contact"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@id/tv_l4_name_contact_value"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_l4_name_contact_value"
+                        app:layout_constraintTop_toTopOf="@id/tv_l4_name_contact_value"/>
+
+                    <TextView
+                        android:id="@+id/tv_l4_name_contact_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/name_contact_value"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tv_l4_name_contact"
+                        app:layout_constraintTop_toBottomOf="@id/tv_l3_name_contact_value" />
+
+                    <!-- Instructions provided to the BT Operations -->
+                    <TextView
+                        android:id="@+id/tv_note"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/note_heading"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@id/tv_note_value"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_note_value"
+                        app:layout_constraintTop_toTopOf="@id/tv_note_value"/>
+
+                    <TextView
+                        android:id="@+id/tv_note_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/note_desc"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tv_note"
+                        app:layout_constraintTop_toBottomOf="@id/tv_l4_name_contact_value" />
+
+                    <!-- CheckIn Duration -->
+                    <TextView
+                        android:id="@+id/tv_checkin_duration"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/checkin_duration"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@id/tv_checkin_duration_value"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_checkin_duration_value"
+                        app:layout_constraintTop_toTopOf="@id/tv_checkin_duration_value"/>
+
+                    <TextView
+                        android:id="@+id/tv_checkin_duration_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/checkin_duration_value"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tv_checkin_duration"
+                        app:layout_constraintTop_toBottomOf="@id/tv_note_value" />
+
+                    <!-- Standard Shift Duration -->
+                    <TextView
+                        android:id="@+id/tv_shift_duration"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shift_duration"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@id/tv_shift_duration_value"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_shift_duration_value"
+                        app:layout_constraintTop_toTopOf="@id/tv_shift_duration_value"/>
+
+                    <TextView
+                        android:id="@+id/tv_shift_duration_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/shift_duration_hint"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tv_shift_duration"
+                        app:layout_constraintTop_toBottomOf="@id/tv_checkin_duration_value" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <include android:id="@+id/disableLayout"
+            layout="@layout/unavailability_layout"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

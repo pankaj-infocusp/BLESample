@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "318642701665",
+    "project_id": "breon-2024-android",
+    "storage_bucket": "breon-2024-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318642701665:android:16db85310e3e3e208d7120",
+        "android_client_info": {
+          "package_name": "breon.telematics.loneworkersafetyapp.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvVFKb-7oJM18Dnbf0Dt1KqshLiwjuEts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

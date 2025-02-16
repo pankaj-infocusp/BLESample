@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="actions_array">
+        <item>Contact supervisor/Manager for guidance</item>
+        <item>Continue field work as planned OR</item>
+        <item>Postpone fieldwork</item>
+        <item>Update safety controls and continue fieldwork OR</item>
+    </string-array>
+    <string-array name="step_one_questions">
+        <item>Do I have access, knowledge &amp; confidence?</item>
+        <item>Do I have the mandatory PPE?</item>
+        <item>Do I know how I may be injured?</item>
+        <item>Do I understand the risks of the job?</item>
+    </string-array>
+    <string-array name="step_one_questions_key">
+        <item>access_knowledge_confidence</item>
+        <item>mandatory_ppe</item>
+        <item>know_injury</item>
+        <item>understand_risks</item>
+    </string-array>
+    <string-array name="step_two_questions">
+        <item>Do I still feel unsure about the unusual circumstances?</item>
+        <item>Do I understand the necessary additional controls?</item>
+        <item>Do I understand the significance of the hazard?</item>
+        <item>Have I checked all available resources?</item>
+    </string-array>
+    <string-array name="step_two_questions_key">
+        <item>unsure_circumstances</item>
+        <item>additional_controls</item>
+        <item>hazard_significance</item>
+        <item>checked_resources</item>
+    </string-array>
+    <string-array name="swms_values_array">
+        <item>Dealing with Aggressive Stakeholders</item>
+        <item>Use of Kayak</item>
+        <item>Field Visits and Inspections</item>
+        <item>Driving a Motor Vehicle</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="colorPrimary">#013B8D</color>
+    <color name="colorPrimaryVariant">#000661</color>
+    <color name="colorSecondary">#FF03DAC5</color>
+    <color name="colorSecondaryVariant">#FF018786</color>
+    <color name="colorSecondary_night">#FFBB86FC</color>
+    <color name="orange">#FE7E01</color>
+    <color name="red">#CD0A0A</color>
+    <color name="setting_button_outline_color">#797070</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_24">24dp</dimen>
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="dimen_32">32dp</dimen>
+    <dimen name="dimen_48">48dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_56">56dp</dimen>
+    <dimen name="dimen_64">64dp</dimen>
+    <dimen name="dimen_70">70dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_header_height">96dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <string name="_19_minutes_57_seconds">19 minutes, 57 seconds</string>
+    <string name="_1_hour">1 hour</string>
+    <string name="_20_minutes">Ex. 20 minutes</string>
+    <string name="_30_minutes">30 minutes</string>
+    <string name="_done">Done!</string>
+    <string name="about">ABOUT</string>
+    <string name="about_nv">About</string>
+    <string name="action">Action</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_participants">Activity Participants:</string>
+    <string name="activity_summery">Activity Summery</string>
+    <string name="agree_and_continue">Agree And Continue</string>
+    <string name="app_name">Breon Lone Worker Safety</string>
+    <string name="are_you_sure_you_want_to_log_off">Are you sure you want to log off ?</string>
+    <string name="asset_name">ASSET NAME: %s</string>
+    <string name="assist_desc_one">If you need Non Emergency Assistance it can be requested here.</string>
+    <string name="assist_desc_two">Enter an optional note to communicate your situation below and press \'REQUEST ASSISTANCE\'. Our Safety Monitoring Center will contact you to assist.</string>
+    <string name="assist_unavailable">ASSIST UNAVAILABLE</string>
+    <string name="btn_log_off">Logoff</string>
+    <string name="btn_save">Save</string>
+    <string name="cancel_assist_req">CANCEL ASSISTANCE REQUEST</string>
+    <string name="cancel_hazard">Cancel Hazard Monitoring</string>
+    <string name="cancel_sos">Cancel SOS</string>
+    <string name="check_in">CHECK IN</string>
+    <string name="check_in_asset_name">ASSET NAME / CURRENT STATUS \n %s (NORMAL)</string>
+    <string name="check_in_desc">Please checkin by %s to avoid safety event</string>
+    <string name="check_in_input_hint">Enter a Note (optional)</string>
+    <string name="check_in_unavailable">CHECK-IN UNAVAILABLE</string>
+    <string name="checkin_duration">Checkin Duration :</string>
+    <string name="checkin_duration_value">Ex. 4 minutes</string>
+    <string name="choose_option">Choose an option</string>
+    <string name="close_drawer">Drawer closed</string>
+    <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="contact_phone">Contact Phone</string>
+    <string name="controll_address_title">please specify hazards and safety controls to address them</string>
+    <string name="copyright_169_breon_telematics_2021_all_rights_reserved">Copyright © BREON Telematics 2021. All rights reserved.</string>
+    <string name="count_down_timer">%s minutes, %s seconds</string>
+    <string name="current_state">Current Asset State is %s</string>
+    <string name="dashboard">DASHBOARD</string>
+    <string name="dashboard_accessing">Please sign on before accessing the dashboard</string>
+    <string name="date_s">Date(s):</string>
+    <string name="default_notification_channel_id">10101</string>
+    <string name="description_electric_record">A permanent electronic record of this form has been stored at:</string>
+    <string name="e_mail_support_breontelematics_com_au">E-mail : support@breontelematics.com.au</string>
+    <string name="edt_name_hint">Enter a Note (optional)</string>
+    <string name="empty_username">Please enter username.</string>
+    <string name="enter_hazards_address">Enter hazards address</string>
+    <string name="enter_optional_note">Enter Optional Note</string>
+    <string name="enter_site">Enter Site</string>
+    <string name="enter_sos_event_details">Enter SOS event details</string>
+    <string name="fcm_message">Breon notification</string>
+    <string name="fcm_title">@string/app_name</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="foreground_service_name">Foreground Service Notification</string>
+    <string name="foreground_service_notification_description">BREON is currently tracking your location.</string>
+    <string name="foreground_service_notification_title">BREON</string>
+    <string name="gcm_defaultSenderId" translatable="false">318642701665</string>
+    <string name="google_api_key" translatable="false">AIzaSyBvVFKb-7oJM18Dnbf0Dt1KqshLiwjuEts</string>
+    <string name="google_app_id" translatable="false">1:318642701665:android:16db85310e3e3e208d7120</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBvVFKb-7oJM18Dnbf0Dt1KqshLiwjuEts</string>
+    <string name="google_storage_bucket" translatable="false">breon-2024-android.appspot.com</string>
+    <string name="group_name">Group Name :</string>
+    <string name="group_name_value">Breon Group</string>
+    <string name="hazard_desc">IMPORTANT: A Hazard Monitoring duration that times out becomes an SOS event and Emergency Services will be deployed.</string>
+    <string name="hazard_text">HAZARD Monitoring can be requested here.</string>
+    <string name="hazard_timer_text">Time remaining to cancel this hazard timer</string>
+    <string name="hazard_unavailable">HAZARD MONITORING UNAVAILABLE</string>
+    <string name="header_layout_title">MENU</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_enter_participants">Enter Participants</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_username">Username</string>
+    <string name="l2_name_contact">2nd point of contact :</string>
+    <string name="l3_name_contact">3rd point of contact :</string>
+    <string name="l4_name_contact">4th point of contact :</string>
+    <string name="location_permission_desc">Please allow location service for safety monitoring purpose.</string>
+    <string name="location_permission_title">Location Permission Consent</string>
+    <string name="location_tracking_interval">Location Tracking Interval (%s/%s minutes)</string>
+    <string name="login">Login</string>
+    <string name="login_contact_us">If you have questions please contact BREON Telematics at support@breontelematics.com.au</string>
+    <string name="login_description">Welcome to BREON Lone Worker Safety App. Please note, you need to be connected to the Internet to complete login and you will stay logged in until you logoff.</string>
+    <string name="logoff">Logoff</string>
+    <string name="lone_worker_safety">Lone Worker Safety</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="menu_about">About</string>
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_sign_on_management">Sign-On Management</string>
+    <string name="mobile_test_template_20_minutes_checkin_1_hour">MOBILE Test Template 20 minutes checkin 1 hour</string>
+    <string name="monitoring_service_notification_description">BREON is currently monitoring your device.</string>
+    <string name="name_contact_value">Name Contact</string>
+    <string name="name_status">ASSET NAME / CURRENT STATUS \n %s %s</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="next">Next</string>
+    <string name="note_desc">Note</string>
+    <string name="note_heading">Instructions provided to the BT Operations :</string>
+    <string name="notification_permission_desc">Please allow notification permission to function app properly.</string>
+    <string name="notification_permission_title">Enable Notification Permission</string>
+    <string name="off_duty_desc">Current asset state is Off Duty, so you can\'t SignOn until the state change.</string>
+    <string name="off_duty_title">Off Duty</string>
+    <string name="open_drawer">Drawer opened</string>
+    <string name="open_sign_on_management_page">OPEN SIGN-ON MANAGEMENT PAGE</string>
+    <string name="org_name">Organization name :</string>
+    <string name="org_name_value">Organization name</string>
+    <string name="password_msg">Password must be 6 letter or more.</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="permission_desc">Location permission is needed for safety monitoring. Please give location permission.</string>
+    <string name="phone_61_3_8336_3333">Phone : 03 8402 0897</string>
+    <string name="previous">Previous</string>
+    <string name="project_id" translatable="false">breon-2024-android</string>
+    <string name="raj">Raj</string>
+    <string name="refresh_token">REFRESH TOKEN</string>
+    <string name="request_assistance">REQUEST ASSISTANCE</string>
+    <string name="safety_timer">Safety Timer</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="select_safety_template">Select a safety template</string>
+    <string name="settings">SETTINGS</string>
+    <string name="settings_unavailable">Settings Unavailable</string>
+    <string name="settings_unavailable_desc">You can\'t change your settings while you are signed on, please sign off to view or change your current settings.</string>
+    <string name="shift_duration">Standard Shift Duration :</string>
+    <string name="shift_duration_hint">Ex. 8hr</string>
+    <string name="sign_off">SIGN OFF</string>
+    <string name="sign_off_desc">WHEN YOU SIGN OFF ALL ASSET MONITORING WILL STOP. \n TO VIEW YOUR DASHBOARD YOU WILL NEED TO SIGNON AGAIN. HOWEVER, YOUR LOCATION WILL BE TRACKED FOR SAFETY MONITORING.</string>
+    <string name="sign_off_time">Signoff Time</string>
+    <string name="sign_on">Sign On</string>
+    <string name="sign_on_desc">YOU NEED TO SIGN ON BEFORE WE CAN START MONITORING. \n WHEN YOU CLICK ON THE SIGN ON BUTTON YOUR DASHBOARD CONTROLS WILL BE AVAILABLE UNTIL YOU SIGN OFF.</string>
+    <string name="sign_on_management">SIGN-ON MANAGEMENT</string>
+    <string name="site">Site:</string>
+    <string name="sos">SOS</string>
+    <string name="sos_desc">Emergency Services will deployed and Safety Monitoring Operations will contact you.</string>
+    <string name="sos_option_one">(1) Enter an optional note to communicate your situation below and press \'SOS\' button.</string>
+    <string name="sos_option_two">(2) Please Cancel if SOS no longer needed.</string>
+    <string name="sos_text">An SOS can be sent here.</string>
+    <string name="sos_unavailable">SOS UNAVAILABLE</string>
+    <string name="start_hazard">Start Hazard Monitoring</string>
+    <string name="status_off_duty_desc">Current Asset State is Off Duty, please sign off.</string>
+    <string name="step_1_title">STEP 1 - STOP</string>
+    <string name="step_2_title">STEP 2 - THINK</string>
+    <string name="step_3_question">Have you identified new or changed hazards?</string>
+    <string name="step_3_title">STEP 3 - Decide</string>
+    <string name="step_one_question_one"><![CDATA[Do I have access, knowledge & confidence?]]></string>
+    <string name="submit">Submit</string>
+    <string name="supervisor_guidance">Contact supervisor/Manager for guidance</string>
+    <string name="swms_checkbox_1">Dealing with Aggressive Stakeholders</string>
+    <string name="swms_checkbox_2">Driving a Motor Vehicle</string>
+    <string name="swms_checkbox_3">Field Visits and Inspections</string>
+    <string name="swms_checkbox_4">Use of Kayak</string>
+    <string name="swms_review_details">Tick the SWMS reviewed for this activity:</string>
+    <string name="take_2_completed_by">Take 2 completed by:</string>
+    <string name="template_name">Template Name :</string>
+    <string name="template_name_value">My template</string>
+    <string name="time_remaining_until_next_check_in">Time remaining until next check in</string>
+    <string name="title_activity_my_dashboard">MyDashboardActivity</string>
+    <string name="token_vreym4dbjxpugtzty1iohl0kthrbeicqosdhxcf29qru1ek01euw8qg3o3ucommmcdsxcoobvalkelxogpctsjwjlpks1y0vwqk6ikpjqxr9ytthb96qji4icezzqx8zkvtafu5hqb7djjc5lisyeoyuar">Token: VREYM4DbjxpUGTZtY1ioHl0KthRBEicQOsdhxcF29QRU1eK01euw8qG3O3uCommMCdsxCooBvalkelXoGPctsjWjLpks1y0vwQk6iKPjQxr9YtThB96qJi4ICEzzQX8ZKvTAfu5Hqb7dJjC5LiSYEoyuar</string>
+    <string name="user_consent_desc">Location details are utilized to accurately determine the location of the last Sign-In, Hazard report, or SOS alert for enhance user safety and operational efficiency.</string>
+    <string name="user_consent_text">Welcome to BREON Lone Worker Safety App. This app collects location data to enable asset safety monitoring of its user: Sign on, Checkin, Tracking, SOS, Assist, Hazard and Sign off even when the app is in background. Please Sign out to stop location capture. If selected to be used, Tracking requires location capture when app is in background.</string>
+    <string name="user_consent_title">User consent for location</string>
+    <string name="version_1_44">Version : 1.44</string>
+    <string name="view_privacy_policy">VIEW PRIVACY POLICY</string>
+    <string name="visit_website">VISIT WEBSITE</string>
+    <style name="Base.Theme.BreonTelematics" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="background">@drawable/button_background</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="ButtonStyleRed" parent="Widget.MaterialComponents.Button">
+        <item name="colorPrimary">@color/red</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="TabLayoutTextStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_gravity">bottom</item>
+
+    </style>
+    <style name="Theme.BreonTelematics" parent="Theme.MaterialComponents.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+    <style name="Theme.BreonTelematics.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.BreonTelematics.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.BreonTelematics.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="Theme.Dashboard" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>
