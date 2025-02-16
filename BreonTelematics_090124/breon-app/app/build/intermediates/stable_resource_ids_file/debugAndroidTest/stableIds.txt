@@ -1,2 +1,0 @@
-breon.telematics.loneworkersafetyapp.android.test:style/WhiteBackgroundTheme = 0x7f010001
-breon.telematics.loneworkersafetyapp.android.test:style/WhiteBackgroundDialogTheme = 0x7f010000
